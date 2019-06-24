@@ -1,0 +1,676 @@
+/*Google Fonts*/
+
+@import url('https://fonts.googleapis.com/css?family=Pacifico|Patrick+Hand|Patrick+Hand+SC&display=swap');
+
+/*Global Styles*/
+
+body {
+	font-family: "Patrick Hand";
+	text-align: center;
+}
+
+.page-wrapper   {
+	display: inline-block;
+	padding-bottom: 800px; /* Adding space at the end of the page*/
+}
+
+a {
+	color: #A9026D;
+	text-decoration: none;
+	font-weight: 700;
+}
+
+a:hover {
+	background-color: rgba(222,255,0,0.42);
+	text-decoration: underline;
+}
+
+p {
+	margin: auto;
+	max-width: 800px; /*Keeping the main text limited to the center of the page */
+}
+
+#zen-preamble p , #zen-participation p, #zen-benefits p, #zen-requirements p{
+	text-align: justify;
+}
+/*Adding background marker image all subtitles except the Design Selection*/
+
+h3:not(.select) {
+	font-family: Pacifico;
+	background-image: url(../Assets/SubtitleBG.png);
+	background-position: center center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	position: relative;
+	margin-top: 50px;
+	margin-bottom: 30px;
+}
+
+/*Adding images before and after all subtitles except the Design Selection*/
+
+h3:not(.select):before  {
+	background-image: url(../Assets/SubtitleMarksLeft.png);
+	background-position: center center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	content: " ";
+	position: relative;
+	display: inline-block;
+	width: 50px;
+	height: 20px;
+	margin-right: 5px;
+}
+
+h3:not(.select):after {
+	background-image: url(../Assets/SubtitleMarksRight.png);
+	background-position: center center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	content: " ";
+	position: relative;
+	display: inline-block;
+	width: 50px;
+	height: 20px;
+	margin-left: 5px;
+}
+
+/*Adding top left rainbow image*/
+.page-wrapper #zen-intro:before  {
+	background-image: url(../Assets/TopLeft.png);
+	content: " ";
+	width: 200px;
+	height: 300px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background-position: left center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+/*Adding Flying Heart Image */
+
+#zen-intro header:after{
+	background-image: url(../Assets/Flying_Heart.png);
+	content: " ";
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	background-position: left center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	bottom: 40px;
+	right: 0px;
+}
+
+
+#zen-intro header {
+	position: relative;
+	margin-top: 50px;
+}
+
+/*Styling CSS Zen Garden header*/
+
+#zen-intro header h1 {
+	font-size: 50px;
+	margin-bottom: 15px;
+	position: relative;
+	font-family: Pacifico;
+}
+
+/*Adding title marks before and after header text */
+#zen-intro header h1::before {
+	content: " ";
+	position: relative;
+	background-image: url(../Assets/TitleMarksLeft.png);
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+	width: 35px;
+	height: 35px;
+	display: inline-block;
+}
+#zen-intro header h1::after {
+	content: " ";
+	position: relative;
+	background-image: url(../Assets/TitleMarksRight.png);
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+	width: 35px;
+	height: 35px;
+	display: inline-block;
+}
+
+/* Adding subtitle marks to h2 in header */
+#zen-intro header h2 {
+	font-size: 20px;
+	margin-top: 0px;
+	position: relative;
+	margin-bottom: 50px;
+	font-family: Pacifico;
+}
+#zen-intro header h2:before {
+	background-image: url(../Assets/SubtitleMarksLeft.png);
+	background-position: center center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	content: " ";
+	position: relative;
+	display: inline-block;
+	width: 50px;
+	height: 20px;
+	margin-right: 5px;
+}
+#zen-intro header h2:after {
+	background-image: url(../Assets/SubtitleMarksRight.png);
+	background-position: center center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	content: " ";
+	position: relative;
+	display: inline-block;
+	width: 50px;
+	height: 20px;
+	margin-left: 5px;
+}
+
+/* Styling Summary section*/
+
+#zen-summary   {
+	font-family: "Patrick Hand SC";
+	margin-bottom: 60px;
+}
+
+/* Adding background image to second paragraph of zen-summary*/
+
+#zen-summary p:nth-of-type(2)  {
+	background-image: url(../Assets/YellowBox.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: contain;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	margin-top: 30px;
+}
+
+#zen-preamble {
+	position: relative;
+}
+
+/* Adding "Important" image */
+
+#zen-preamble:before {
+	background-image: url(../Assets/Important.png);
+	background-position: center center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	content: " ";
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	top: -80px;
+	display: inline-block;
+	left: 0px;
+}
+
+/*Adding Section separator*/
+
+.page-wrapper #zen-supporting #zen-benefits:after {
+	width: 800px;
+	height: 200px;
+	margin: 0 auto;
+	display: block;
+	position: relative;
+	background-image: url(../Assets/SeparatorLeaves.png);
+	background-position: center center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	content: " ";
+}
+
+/*Adding space before next Section separator*/
+
+.page-wrapper #zen-supporting #zen-benefits p {
+	margin-bottom: 50px;
+}
+
+/*Adding Section separator*/
+
+.page-wrapper #zen-supporting #zen-explanation:after {
+	background-image: url(../Assets/SeparatorArrow.png);
+	content: " ";
+	display: block;
+	width: 800px;
+	height: 100px;
+	background-position: center center;
+	background-size: contain;
+	margin: 0 auto;
+	background-repeat: no-repeat;
+}
+
+.page-wrapper #zen-supporting #zen-explanation p {
+	text-align: justify;
+}
+
+/* Adding space after section separator*/
+
+#zen-supporting #zen-explanation p:last-of-type {
+	margin-bottom: 400px;
+}
+
+/* Styling and moving Design Selection from Sidebar */
+
+.sidebar .design-selection   {
+	display: inline-block;
+	background-image: url(../Assets/Box.png);
+	background-position: center center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	min-width: 400px;
+	min-height: 305px;
+	position: absolute;
+	top: 850px;
+	right: 0px;
+	left: 0px;
+
+}
+
+.sidebar .wrapper #design-selection nav {
+	display: inline-block;
+}
+
+.sidebar .wrapper #design-selection .select {
+	font-family: "Patrick Hand SC";
+	margin-top: 0px;
+	padding-top: 10px;
+	margin-bottom: 0px;
+
+}
+
+ul li .design-name , .designer-name{
+	color: #000000;
+}
+
+/* Adding colourful bullet points for each item in Design selection*/
+
+.design-selection nav ul li:nth-of-type(1)   {
+	text-align: justify;
+	list-style-image: url(../Assets/Bullet_blue.png);
+	line-height: 0px;
+	vertical-align: baseline;
+}
+
+.design-selection nav ul li:nth-of-type(2)   {
+	text-align: justify;
+	list-style-image: url(../Assets/Bullet_green.png);
+	line-height: 0px;
+	vertical-align: baseline;
+}
+
+.design-selection nav ul li:nth-of-type(3)  {
+	text-align: justify;
+	list-style-image: url(../Assets/Bullet_Orange.png);
+	line-height: 0px;
+	vertical-align: baseline;
+}
+
+.design-selection nav ul li:nth-of-type(4)  {
+	text-align: justify;
+	list-style-image: url(../Assets/Bullet_yellow.png);
+	line-height: 0px;
+	vertical-align: baseline;
+}
+.design-selection nav ul li:nth-of-type(5)  {
+	text-align: justify;
+	list-style-image: url(../Assets/Bullet_Pink.png);
+	line-height: 0px;
+	vertical-align: baseline;
+}
+.design-selection nav ul li:nth-of-type(1n+6)    {
+	text-align: justify;
+	list-style-image: url(../Assets/Bullet_blue.png);
+	line-height: 0px;
+	vertical-align: baseline;
+}
+
+.design-selection nav ul li:nth-of-type(2n+7)    {
+	text-align: justify;
+	list-style-image: url(../Assets/Bullet_green.png);
+	line-height: 0px;
+	vertical-align: baseline;
+}
+
+.design-selection nav ul li:nth-of-type(3n+8)    {
+	text-align: justify;
+	list-style-image: url(../Assets/Bullet_Orange.png);
+	line-height: 0px;
+	vertical-align: baseline;
+}
+
+.design-selection nav ul li:nth-of-type(4n+9)    {
+	text-align: justify;
+	list-style-image: url(../Assets/Bullet_yellow.png);
+	line-height: 0px;
+	vertical-align: baseline;
+}
+
+.design-selection nav ul li:nth-of-type(5n+10)    {
+	text-align: justify;
+	list-style-image: url(../Assets/Bullet_Pink.png);
+	line-height: 0px;
+	vertical-align: baseline;
+}
+
+
+#zen-supporting #zen-requirements {
+	position: relative;
+}
+
+#zen-supporting #zen-requirements p:last-of-type  {
+	text-align: left;
+	margin-top: 50px;
+}
+
+/*Styling Footer*/
+
+footer {
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 50px;
+	text-align: center;
+	margin-top: 50px;
+	display: inline-block;
+	background-color: rgba(222,255,0,0.42);
+}
+
+footer a {
+	padding: 0 20px;
+}
+
+
+/* Styling Remaining sidebar elements at bottom of page */
+
+#design-archives  , #zen-resources {
+	border: 3px solid black;
+	margin: 20px  auto;
+	max-width: 400px;
+	min-width: 300px;
+}
+
+#design-archives h3  , #zen-resources h3  {
+	background-image: none;
+	margin-top: 20px;
+	display: block;
+}
+
+#design-archives nav ul , .wrapper #zen-resources ul{
+	padding-left: 0px;
+	display: inline-block;
+	margin: 0 auto 20px auto;
+	width: 163px;
+}
+
+#design-archives nav ul li  ,  #zen-resources ul li   {
+	display: list-item;
+	list-style-image: url(../Assets/Bullet_yellow.png);
+	list-style-position: inside;
+	text-align: left;
+}
+
+
+/* Adding Design name and info */
+
+footer:after {
+	content: "The Journal";
+	position: absolute;
+	bottom: -700px;
+	width: 300px;
+	font-family: Pacifico;
+	font-size: 30px;
+	background-image: url(../Assets/SubtitleBG.png);
+	background-position: center center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	left: 50%;
+	margin-left: -150px;
+}
+
+.requirements:after   {
+	content: "Developed by Ana Luisa Sampaio. Art and Design by Ana Luisa Sampaio & Enrique Hervas";
+	width: 300px;
+	color: #000000;
+	position: absolute;
+	left: 50%;
+	bottom: -810px;
+	font-size: 13px;
+	margin-left: -150px;
+}
+
+/*Adding Design Logo*/
+
+#zen-resources {
+	position: relative;
+}
+
+#zen-resources:after {
+	background-image: url(../Assets/ZenGardenLogo.png);
+	content: " ";
+	background-position: center center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 300px;
+	height: 300px;
+	position: absolute;
+	bottom: -630px;
+	left: 50%;
+	margin-left: -150px;
+}
+
+
+
+/*Media Queries for Responsiveness*/
+
+/*Styling to apply to bigger screens*/
+
+@media (min-width: 972px){
+
+/*Positioning Design selection under #zen-explanation section*/
+
+.sidebar .design-selection {
+	top: 900px;
+}
+
+
+.page-wrapper #zen-supporting #zen-explanation p:last-of-type {
+	margin-bottom: 400px;
+}
+/*Adding pink arrows to the sides of Archive and Resources*/
+
+#design-archives {
+	position: relative;
+}
+
+#design-archives:before {
+	background-image: url(../Assets/Arrows_left_down.png);
+	background-position: center center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	content: " ";
+	width: 100px;
+	height: 400px;
+	position: absolute;
+	left: -150px;
+}
+
+#design-archives:after {
+	background-image: url(../Assets/Arrows_right_down.png);
+	background-position: center center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	content: " ";
+	width: 100px;
+	height: 400px;
+	position: absolute;
+	top: 0px;
+	right: -150px;
+}
+
+}
+
+/*Style to apply to extra small screens*/
+
+@media (max-width:740px){
+
+h3:not(.select) {
+	font-size: 15px;
+}
+
+#zen-intro header:after {
+   	right: 19px;
+	width: 100px;
+    height: 100px;
+	bottom: 55px;
+}
+
+#zen-intro header h1 {
+    font-size: 25px;
+}
+
+#zen-intro header h1::before {
+    width: 25px;
+    height: 25px;
+}
+#zen-intro header h1::after {
+    width: 25px;
+    height: 25px;
+}
+
+#zen-intro header h2:before {
+    width: 35px;
+    height: 15px;
+}
+
+#zen-intro header h2:after {
+    width: 35px;
+    height: 15px;
+}
+
+#zen-intro header h2 {
+    font-size: 15px;
+}
+
+.page-wrapper #zen-intro:before {
+    width: 100px;
+    height: 150px; 
+}
+
+.wrapper {
+	position: relative;
+}
+
+/* Reduce widths for text */
+p  , footer, .design-archives, .zen-resources{
+	max-width: 300px;
+	font-size:14px;
+}
+
+
+/* Adjustments to Design selection position*/
+.sidebar .design-selection {
+	top: -2245px;
+	left: 50%;
+	width: 100px;
+	margin-left: -200px;
+}
+
+/* Resizing Separators to fit smaller screens*/
+
+.page-wrapper #zen-supporting #zen-explanation:after {
+	width: 300px;
+}
+
+.page-wrapper #zen-supporting #zen-benefits:after {
+	width: 300px;
+}
+
+.sidebar .design-selection {
+    background-image: none;
+	
+}
+.requirements:after {
+    bottom: -860px;
+}
+
+}
+
+/*Style to apply to small to medium screens*/
+
+@media (min-width:740px) and (max-width:971px){
+	
+.wrapper {
+	position: relative;
+}
+
+/* Adjustments to Design selection position*/
+.sidebar .design-selection {
+	position: absolute;
+	top: -2045px;
+	left: 50%;
+	width: 400px;
+	margin-left: -200px;
+}
+
+/* Reduce widths for text */
+p , footer, .design-archives, .zen-resources{
+	max-width: 500px;
+}
+
+/* Move flying heart */
+#zen-intro header:after {
+	right: -40px;
+}
+
+/* Resizing Separators to fit smaller screens*/
+.page-wrapper #zen-supporting #zen-explanation:after {
+	width: 500px;
+}
+
+.page-wrapper #zen-supporting #zen-benefits:after {
+	width: 500px;
+}
+
+/*Adding pink arrows to the sides of Archive and Resources*/
+
+#design-archives {
+	position: relative;
+}
+
+#design-archives:before {
+	background-image: url(../Assets/Arrows_left_down.png);
+	background-position: center center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	content: " ";
+	width: 100px;
+	height: 400px;
+	position: absolute;
+	left: -150px;
+}
+
+#design-archives:after {
+	background-image: url(../Assets/Arrows_right_down.png);
+	background-position: center center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	content: " ";
+	width: 100px;
+	height: 400px;
+	position: absolute;
+	top: 0px;
+	right: -150px;
+}
+
+
+}
